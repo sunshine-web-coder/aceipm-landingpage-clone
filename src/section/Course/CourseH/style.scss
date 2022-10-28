@@ -1,0 +1,73 @@
+.CourseH {
+    padding: 108px 0px 108px 0px;
+    background-color: #02131B;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+
+    .inCourseH {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .CourseHCont {
+            width: 100%;
+            display: flex;
+            gap: 50px;
+
+            .left {
+                width: 50%;
+                padding: 10px;
+
+                h2 {
+                    color: #00f0ff;
+                    line-height: 1.3em;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 2.1em;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 1.8em;
+                    }
+                }
+
+                p {
+                    color: #FFFFFF;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    color: #FFFFFF;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 1em;
+
+                    .icon {
+                        margin-right: 9px;
+                        font-size: 15px;
+                        color: #00f0ff;
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+
+                .inRight {
+                    background-color: #112934;
+                    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                    padding: 40px 40px 40px 40px;
+                    border-radius: 6px 6px 6px 6px;
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+
+                .left,
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

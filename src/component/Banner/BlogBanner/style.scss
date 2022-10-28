@@ -1,0 +1,73 @@
+.BlogBanner {
+    width: 100%;
+    height: 100%;
+    background-color: #47278F;
+    background-image: linear-gradient(rgba(77, 30, 183, 0%), rgb(70, 39, 143)),
+        url(https://iili.io/bJhVDP.md.png);
+    padding: 210px 0px 70px 0px;
+
+    .inBanner {
+
+        .title {
+            text-align: center;
+
+            h1 {
+                color: #FFFFFF;
+                font-size: 60px;
+                font-family: "Poppins", Sans-serif;
+                font-weight: bold;
+                text-transform: capitalize;
+                line-height: 1.3em;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                color: #FFFFFF;
+                max-width: 700px;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+        }
+
+        .searchBox {
+            max-width: 500px;
+            margin: auto;
+
+            form {
+                display: flex;
+                input {
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 0.9em;
+                    line-height: 2em;
+                    color: #252525;
+                    background-color: #FFFFFF;
+                    border: 2px solid #D1D2E6;
+                    padding: 10px 15px 10px 15px;
+                    transition: all .3s;
+                    width: 100%;
+                    outline: none;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+
+                button{
+                    background-color: #ECEDFB;
+                    min-width: 50px;
+                    border: none;
+                    outline: none;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    cursor: pointer;
+
+                    i{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

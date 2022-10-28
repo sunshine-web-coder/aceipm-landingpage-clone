@@ -1,0 +1,245 @@
+.CourseC {
+    padding: 100px 0px 60px 0px;
+
+    .title {
+        padding: 10px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            text-transform: none;
+            line-height: 1.3em;
+            color: #112934;
+            font-family: "Poppins", Sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 2.6em;
+            }
+        }
+
+        p {
+            text-align: center;
+            color: #000000;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    .inCourseUh7 {
+        // padding: 0;
+        // max-width: 1000px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        // .left {
+        //     padding-left: 20px;
+        //     padding-right: 20px;
+        //     width: 56.908%;
+
+        //     img {
+        //         border-style: solid;
+        //         border-width: 0px;
+        //         border-radius: 8px;
+        //         height: auto;
+        //         max-width: 100%;
+        //         border: none;
+        //     }
+        // }
+
+        .priceBox {
+            padding: 30px;
+            max-width: 360px;
+            background-color: #02131B;
+            border-radius: 8px;
+            box-shadow: 29px 15px 50px 0px rgba(0, 0, 0, 0.151);
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            border: 2px solid #00F0FF;
+
+            &:hover {
+                background-color: #112934;
+                box-shadow: 15px 15px 50px 0px rgba(0, 0, 0, 0.014);
+            }
+
+            .rImgCourseC {
+                width: 100%;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                margin-bottom: 20px;
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    border: none;
+                    vertical-align: middle;
+                    display: inline-block;
+                    border-radius: 8px;
+                    box-shadow: none;
+                }
+
+                .play-icon {
+                    color: #ffffff;
+                    font-size: 100px;
+                    border: 6px solid #ffffff;
+                    border-radius: 50%;
+                    padding: 13px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.342),
+                        inset 9px 7px 24px -6px rgba(0, 0, 0, 0.342);
+
+                }
+            }
+
+            .CourseCToggle {
+                // margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5%;
+
+                div {
+
+                    &.toggleText {
+                        cursor: pointer;
+
+                        h5 {
+                            font-family: "Poppins", Sans-serif;
+                            font-size: 1.5em;
+                            font-weight: bold;
+                            text-transform: capitalize;
+                            color: #ffffff;
+                        }
+                    }
+
+
+
+                    &.toggleL {
+                        font-size: 15px;
+                        position: relative;
+                        z-index: 1;
+
+                        .switch {
+                            width: 4.4em;
+                            height: 2.3em;
+                            border-radius: 34px;
+                            background-color: #6EC1E4;
+                            box-shadow: 0 0 1px #6EC1E4;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            text-align: center;
+                            cursor: pointer;
+                            position: relative;
+                            -webkit-transition: .4s;
+                            transition: .4s;
+
+                            .fa-circle {
+                                color: #ffffff;
+                                font-size: 25px;
+                                position: absolute;
+                                -webkit-transition: .4s;
+                                transition: .4s;
+                                transform: translateX(5px);
+
+                                &.active {
+                                    transform: translateX(35px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .CourseCPrice {
+                margin-bottom: 10px;
+
+                h6 {
+                    color: #00F0FF;
+                    font-size: 44px;
+                    font-family: "Poppins", Sans-serif;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    margin: 0;
+                    padding: 0;
+
+                    span:nth-child(1) {
+                        text-decoration: line-through;
+                        font-weight: 400;
+                        color: #ffffff;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .CourseLBtn {
+                margin-bottom: 20px;
+
+                .siteBtn {
+                    background-color: #00F0FF;
+                    color: #02131B;
+                }
+            }
+
+            .cListUi {
+                h6 {
+                    color: #FFFFFF;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+
+                    li {
+                        color: #FFFFFF;
+                        padding-left: 14px;
+                        font-family: "Poppins", Sans-serif;
+                        font-size: 1em;
+                        color: #00F0FF;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        margin-bottom: 8px;
+
+                        span {
+                            color: #ffffff;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+
+            .priceBox{
+                max-width: 100%;
+            }
+        }
+
+    }
+
+}

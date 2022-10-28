@@ -1,0 +1,120 @@
+.CourseE {
+    padding: 60px 0px 60px 0px;
+
+    .title {
+        padding: 10px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            text-transform: none;
+            line-height: 1.3em;
+            color: #112934;
+            font-family: "Poppins", Sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 2.6em;
+            }
+        }
+
+        p {
+            text-align: center;
+            color: #000000;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+
+            strong {
+                font-weight: bolder;
+                color: #112934;
+            }
+        }
+    }
+
+    .inCourseUh7 {
+        padding: 0;
+        .cSlideShow {
+            .slideBox {
+                padding: 30px;
+
+                .inSlideBox {
+                    width: 100%;
+                    height: auto;
+                    cursor: pointer;
+
+                    .top {
+                        padding: 30px;
+                        background-color: #02131B;
+                        position: relative;
+                        margin-bottom: 30px;
+
+                        p {
+                            color: #ffffff;
+                        }
+
+                        &.arrowBox::after {
+                            position: absolute;
+                            bottom: -10px;
+                            left: 10%;
+                            margin-left: -10px;
+                            content: "";
+                            display: block;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-top: 10px solid #02131B;
+                        }
+                    }
+
+                    .bottom {
+                        padding: 0 30px 0 30px;
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .SbLeft {
+
+                            .sBlImg {
+                                flex-shrink: 0;
+
+                                img {
+                                    border-style: solid;
+                                    border-color: #02131B;
+                                    border-width: 3px;
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 999px;
+                                    box-sizing: content-box;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+
+                        .SbRight {
+
+                            p {
+                                margin: 0;
+                                padding: 0;
+                                font-family: "Poppins", Sans-serif;
+                                font-weight: bold;
+
+                                &:last-child {
+                                    color: #B8B8B8;
+                                    font-family: "Open Sans", Sans-serif;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .c6yM {
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.HomeF {
+    padding: 80px 0px 80px 0px;
+    background-color: #ffffff;
+    min-height: 100vh;
+
+    .inHomeF {
+        height: 100%;
+
+        .title {
+            padding: 10px;
+            max-width: 600px;
+            margin: auto;
+
+            h2 {
+                color: #252525;
+                font-family: "Poppins", Sans-serif;
+                font-size: 2.1em;
+                font-weight: bold;
+                text-transform: none;
+                line-height: 1.3em;
+                text-align: center;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 1.8em;
+                }
+            }
+
+            p {
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
+
+        .HomeFCont {
+            margin-top: 50px;
+            display: flex;
+            gap: 25px;
+
+            .HomeFContLeft,
+            .HomeFContRight {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .accordionContainer {
+                    width: 100%;
+
+                    .accordionTitle {
+                        border-width: 4px;
+                        border-color: #FFFFFF;
+                        background-color: #ECEDFB;
+                        padding: 15px 15px 20px 15px;
+                        font-weight: 700;
+                        line-height: 1;
+                        margin: 0;
+                        padding: 15px;
+                        cursor: pointer;
+                        outline: none;
+                        width: 100%;
+
+                        .h4 {
+                            color: #252525;
+                            font-family: "Poppins", Sans-serif;
+                            font-size: 18px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            &.active {
+                                color: #47278F;
+                            }
+
+                            .arrowIcon {
+                                transform: rotate(90deg);
+                                font-size: 30px;
+
+                                &.active {
+                                    transform: rotate(-90deg);
+                                }
+                            }
+                        }
+                    }
+
+                    .accordionBody {
+                        overflow: hidden;
+                        height: 0;
+                        opacity: 0;
+                        transition: height 0ms 400ms, opacity 400ms 0ms;
+
+                        &.active {
+                            padding: 15px;
+                            height: auto;
+                            opacity: 1;
+                            transition: height 0ms 0ms, opacity 600ms 0ms;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+                gap: 5px;
+
+                .HomeFContLeft,
+                .HomeFContRight {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

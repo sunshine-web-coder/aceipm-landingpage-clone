@@ -1,0 +1,239 @@
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #02131B;
+    background-image: linear-gradient(rgba(2, 19, 27, 0%), rgba(2, 19, 27, 100%)),
+        url(https://iili.io/bJhVDP.md.png);
+    padding: 90px 0px 0px 0px;
+
+    .inBanner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 49.825%;
+            padding: 125px 0px 100px 0px;
+
+            h1 {
+                color: #FFFFFF;
+                font-size: 61px;
+                font-weight: bold;
+                text-transform: none;
+                line-height: 1.3em;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 32px;
+                }
+            }
+
+            p {
+                color: #FFFFFF;
+                font-size: 1.34em;
+                margin-bottom: 20px;
+                max-width: 450px;
+
+                span {
+                    font-size: 1em;
+                }
+            }
+
+            .BannerLeftBtn {
+                margin-top: 50px;
+                display: flex;
+                gap: 20px;
+
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                }
+
+                .siteBtn2 {
+                    background-color: #7538FF;
+
+                    &:hover {
+                        background-color: #6325F0;
+                    }
+                }
+
+                .icon {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 30px;
+            
+            @media screen and (max-width: 767px){
+                padding-bottom: 70px;
+            }
+
+            .skd {
+                width: 100%;
+
+                .inSkd {
+                    max-width: 450px;
+                    min-height: 410px;
+                    background-image: url("https://iili.io/D6EBPp.png");
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: center;
+                    position: relative;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .imgWoman {
+                        position: absolute;
+                        left: -55px;
+                        top: 30px;
+                        animation-name: floating;
+                        animation-duration: 3s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes floating {
+
+                            0% {
+                                transform: translate(0, 0px);
+                            }
+
+                            50% {
+                                transform: translate(0, 15px);
+                            }
+
+                            100% {
+                                transform: translate(0, -0px);
+                            }
+                        }
+                    }
+
+                    .imgCap {
+                        max-width: 90px;
+                        position: absolute;
+                        right: 35px;
+
+                        top: 30px;
+                        animation-name: floating;
+                        animation-duration: 3s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes floating {
+
+                            0% {
+                                transform: translate(0, 0px);
+                            }
+
+                            50% {
+                                transform: translate(0, 15px);
+                            }
+
+                            100% {
+                                transform: translate(0, -0px);
+                            }
+                        }
+                    }
+
+                    .imgBook {
+                        max-width: 90px;
+                        position: relative;
+                        left: -30px;
+                        top: -20px;
+                        animation-name: floating;
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes floating {
+                            0% {
+                                transform: translate(0, 0px);
+                            }
+
+                            50% {
+                                transform: translate(0, 25px);
+                            }
+
+                            100% {
+                                transform: translate(0, -0px);
+                            }
+                        }
+                    }
+
+                    .imgHuman {
+                        position: absolute;
+                        right: 10px;
+                        top: 100px;
+                        animation-name: floating;
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes floating {
+                            0% {
+                                transform: translate(0, 0px);
+                            }
+
+                            50% {
+                                transform: translate(0, 25px);
+                            }
+
+                            100% {
+                                transform: translate(0, -0px);
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        background-size: 300px 300px;
+
+                        .imgWoman {
+                            max-width: 250px;
+                            top: 70px;
+                        }
+
+                        .imgHuman {
+                            max-width: 200px;
+                        }
+
+                        .imgCap {
+                            top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .left {
+                text-align: center;
+                padding-bottom: 100px;
+
+                p {
+                    max-width: 100%;
+                }
+
+                .BannerLeftBtn {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

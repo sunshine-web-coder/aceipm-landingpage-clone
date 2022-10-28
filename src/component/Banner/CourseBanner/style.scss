@@ -1,0 +1,193 @@
+.CourseBanner {
+    width: 100%;
+    height: 100%;
+    background-color: #02131B;
+    background-image: linear-gradient(rgba(2, 19, 27, 0%), rgba(2, 19, 27, 100%)),
+        url(https://iili.io/bJhVDP.md.png);
+    padding: 120px 0px 78px 0px;
+
+    @media screen and (max-width: 767px) {
+        padding: 80px 0px 0px 0px;
+    }
+
+    .inBanner {
+        // border: 1px solid red;
+        max-width: 1020px;
+
+        .title {
+            padding: 20px 0px 20px 0px;
+
+            h1 {
+                background-image: linear-gradient(225deg, #affaff, #00f0ff 20%, #00f0ff 70%, #00a8b3);
+                -webkit-background-clip: text;
+                color: #00F0FF;
+                font-family: "Poppins", Sans-serif;
+                font-size: 40px;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1em;
+                text-align: center;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 1.6em;
+                    line-height: 1.1em;
+                }
+            }
+
+            p {
+                text-align: center;
+                color: #FFFFFF;
+                font-family: "Poppins", Sans-serif;
+                font-size: 22px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 0.95em;
+                    line-height: 1.4em;
+                }
+            }
+        }
+
+        .Y7JNMr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+
+            .Y7JNMrCont {
+                display: flex;
+                width: 50%;
+                gap: 15px;
+
+                .Y7JNMrbox {
+                    width: 100%;
+
+                    .InY7JNMrbox {
+                        margin-bottom: 10px;
+                        background-color: #112934;
+                        padding: 20px;
+                        text-align: center;
+                        border-radius: 8px;
+
+                        h4 {
+                            color: #FFFFFF;
+                            font-family: "Poppins", Sans-serif;
+                            font-size: 24px;
+                            line-height: 1.2em;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        p {
+                            color: #FFFFFF;
+                            font-family: "Poppins", Sans-serif;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        .icon {
+                            text-align: center;
+                            margin-bottom: 10px;
+
+                            .fa-solid {
+                                font-size: 40px;
+                                color: #2DCECE;
+                                border-color: #2DCECE;
+                                font-weight: 900;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Y7JNMrbox {
+                width: 50%;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    border-radius: 8px;
+                }
+
+                .play-icon {
+                    color: #00F0FF;
+                    font-size: 100px;
+                    border: 5px solid #00F0FF;
+                    border-radius: 50%;
+                    padding: 13px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                flex-direction: column-reverse;
+
+                .Y7JNMrbox,
+                .Y7JNMrCont {
+                    width: 100%;
+                }
+            }
+        }
+
+        .c07umM {
+            margin-top: 20px;
+
+            .c07umMSlideBox {
+                width: 326.667px;
+                padding: 10px;
+
+                .inC07umMSlideBox {
+                    background: no-repeat 50%;
+                    background-size: cover;
+                    cursor: pointer;
+                    width: 100%;
+                    min-height: 230px;
+                    transition-duration: .5s;
+                    position: relative;
+                    border-radius: 8px;
+                    transition-property: border, background, transform, -webkit-transform;
+                    overflow: hidden;
+                    background-image: url("https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+
+                    &.inC07umMSlideBox2 {
+                        background-image: url("https://images.unsplash.com/photo-1592598015799-35c84b09394c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGJsYWNrJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+                    }
+
+                    &.inC07umMSlideBox3 {
+                        background-image: url("https://images.unsplash.com/photo-1492462543947-040389c4a66c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIwfHxibGFjayUyMG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+                    }
+
+                    &.inC07umMSlideBox4 {
+                        background-image: url("https://images.unsplash.com/photo-1614023342667-6f060e9d1e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvcnBvcmF0ZSUyMG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+                    }
+
+                    a {
+                        display: inline;
+                    }
+
+                    .play-icon {
+                        color: #00F0FF;
+                        font-size: 50px;
+                        border: 2px solid #00F0FF;
+                        border-radius: 50%;
+                        padding: 13px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}

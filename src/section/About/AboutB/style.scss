@@ -1,0 +1,103 @@
+.AboutB {
+    background-color: #4D1EB7;
+    padding: 0;
+    padding: 80px 0px 80px 0px;
+
+
+    .inAboutB {
+        .title {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            padding: 10px;
+            max-width: 600px;
+            margin: auto;
+            color: #FFFFFF;
+
+            h2 {
+
+                font-family: "Poppins", Sans-serif;
+                font-size: 2.1em;
+                font-weight: bold;
+                text-transform: none;
+                line-height: 1.3em;
+                text-align: center;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 1.8em;
+                }
+            }
+
+            p {
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+    }
+
+    .mM8nj {
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 30px 0px 0px 0px;
+        border: 1px solid rgba(255, 255, 255, 0.384);
+        padding: 30px 0px 30px 0px;
+
+
+        .MmM8nj {
+            display: flex;
+            align-items: center;
+
+            .tBox {
+                width: 25%;
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .tBoxImg {
+                    padding: 20px 20px 20px 20px;
+                    min-height: 100px;
+
+                    img {
+                        width: 70%;
+                        height: auto;
+                        border-radius: 6px 6px 6px 6px;
+                        box-shadow: 6px -6px 0px 0px #844eff;
+                    }
+                }
+
+                .tBoxText {
+                    h6 {
+                        font-family: "Poppins", Sans-serif;
+                        font-size: 1.3em;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+                        margin-bottom: 5px;
+                    }
+
+                    p {
+                        color: #ffffff;
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                flex-wrap: wrap;
+
+                .tBox {
+                    width: 50%;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                .tBox {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

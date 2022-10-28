@@ -1,0 +1,119 @@
+.CounselBanner {
+    width: 100%;
+    height: 100%;
+    background-color: #47278F;
+    background-image: linear-gradient(rgba(77, 30, 183, 0%), rgb(70, 39, 143)),
+        url(https://iili.io/bJhVDP.md.png);
+    padding: 210px 0px 70px 0px;
+
+    .inBanner {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        height: 100%;
+
+        .HomeDCont {
+            width: 100%;
+            display: flex;
+            gap: 50px;
+
+            .left {
+                width: 50%;
+                padding: 10px;
+
+                h2 {
+                    color: #FFFFFF;
+                    line-height: 1.3em;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 2.1em;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 1.8em;
+                    }
+                }
+
+                p {
+                    color: #FFFFFF;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    color: #FFFFFF;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 1em;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
+
+                    .icon {
+                        margin-right: 9px;
+                        font-size: 15px;
+                        color: #FF45AD;
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+                // padding: 10px;
+
+                .inRight {
+                    background-color: #FFFFFF;
+                    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                    padding: 40px 40px 40px 40px;
+                    border-radius: 6px 6px 6px 6px;
+
+                    form {
+
+                        .form_field {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 15px;
+
+                            @media screen and (max-width: 767px) {
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            input,
+                            select {
+                                background-color: #ffffff;
+                                border: 2px solid #D1D2E6;
+                                color: #252525;
+
+                                &:focus {
+                                    border: 2px solid #b9bacc;
+                                }
+                            }
+                        }
+
+                        .form_btn {
+
+                            .siteBtn {
+                                background-color: #7538FF;
+                                color: #ffffff;
+
+                                &:hover {
+                                    background-color: #6325F0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+
+                .left,
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

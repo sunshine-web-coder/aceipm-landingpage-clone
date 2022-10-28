@@ -1,0 +1,103 @@
+.AboutBanner {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(77, 30, 183, 0%), rgb(70, 39, 143)),
+        url(https://iili.io/bJhVDP.md.png);
+    padding: 90px 0px 0px 0px;
+
+    @media screen and (max-width: 767px) {
+        padding: 80px 0px 0px 0px;
+    }
+
+    .inBanner {
+        position: relative;
+
+        .MiMAb {
+            position: relative;
+            top: 100px;
+
+            h1 {
+                color: #FFFFFF;
+                font-size: 61px;
+                font-weight: bold;
+                text-transform: none;
+                line-height: 1.3em;
+                font-family: "Poppins", Sans-serif;
+                text-align: center;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 37px;
+                }
+            }
+
+            .Mnyy8 {
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #DBDBDB;
+                box-shadow: 15px 15px 57px -16px rgba(0, 0, 0, 0.144);
+                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                margin-top: 30px;
+                padding: 50px 30px 50px 30px;
+                border-radius: 6px 6px 6px 6px;
+                width: 100%;
+                background-color: #FFFFFF;
+
+                @media screen and (max-width: 767px) {
+                    padding: 20px;
+                }
+
+                .inMnyy8 {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    @media screen and (max-width: 1024px) {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 30px;
+                    }
+
+                    .counterBox {
+                        width: 25%;
+                        padding: 10px;
+
+                        @media screen and (max-width: 1024px) {
+                            width: 100%;
+                        }
+
+                        .top {
+                            font-family: "Poppins", Sans-serif;
+                            font-size: 3em;
+                            line-height: 1.4em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            @media screen and (max-width: 767px) {
+                                font-size: 38px;
+                            }
+
+                            span {
+                                font-weight: 600;
+                                color: #303030;
+                            }
+                        }
+
+                        .bottom {
+                            font-size: 1em;
+                            text-transform: capitalize;
+                            line-height: 1.4em;
+                            color: #303030;
+                            font-weight: 400;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}

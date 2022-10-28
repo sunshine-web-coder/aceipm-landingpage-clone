@@ -1,0 +1,138 @@
+.HomeC {
+    padding: 110px 0px 110px 0px;
+
+    .inHomeC {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .left {
+            width: 50%;
+            padding: 10px;
+            padding-top: 50px;
+
+            h2 {
+                line-height: 1.3em;
+                color: #252525;
+                font-family: "Poppins", Sans-serif;
+                font-size: 2.1em;
+                font-weight: bold;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 1.8em;
+                }
+            }
+
+            p {
+                margin-bottom: 35px;
+            }
+
+            .homeClBtn {
+
+                .siteBtn {
+                    max-width: 250px;
+                    background-color: #7538FF;
+
+                    &:hover {
+                        background-color: #6325F0;
+                    }
+                }
+
+                @media screen and (max-width: 1024px) {
+                    .siteBtn {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            padding: 10px;
+
+            .slideBox {
+                width: 570px;
+                height: auto;
+                cursor: pointer;
+                // padding: 20px;
+
+                .top {
+                    padding: 30px 30px 30px 30px;
+                    background-color: #ECEDFB;
+                    position: relative;
+                    margin-bottom: 30px;
+
+                    &.arrowBox::after {
+                        position: absolute;
+                        bottom: -10px;
+                        left: 10%;
+                        margin-left: -10px;
+                        content: "";
+                        display: block;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-top: 10px solid #ECEDFB;
+                    }
+                }
+
+                .bottom {
+                    padding: 0 30px 0 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .SbLeft {
+
+                        // width: 20%;
+                        .sBlImg {
+                            flex-shrink: 0;
+
+                            img {
+                                border-style: solid;
+                                border-color: #4D1EB7;
+                                border-width: 2px;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 999px;
+                                box-sizing: content-box;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .SbRight {
+                        // width: 100%;
+
+                        p {
+                            margin: 0;
+                            padding: 0;
+                            font-family: "Poppins", Sans-serif;
+                            font-weight: bold;
+
+                            &:last-child {
+                                color: #B8B8B8;
+                                font-family: "Open Sans", Sans-serif;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .left {
+                text-align: center;
+            }
+        }
+    }
+}

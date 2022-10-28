@@ -1,0 +1,133 @@
+.CourseD {
+    padding: 60px 0px 60px 0px;
+    background-color: #02131B;
+
+    .title {
+        padding: 10px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            text-transform: none;
+            line-height: 1.3em;
+            color: #00f0ff;
+            font-family: "Poppins", Sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+
+            @media screen and (max-width: 767px) {
+                font-size: 2.6em;
+            }
+        }
+    }
+
+    .CourseUh7 {
+        padding: 20px 0px 20px 0px;
+        border-left: none;
+        border-right: none;
+        margin-top: 30px;
+
+        .inCourseUh7 {
+            display: flex;
+            gap: 30px;
+            max-width: 1020px;
+
+            .inCourseUh7Box {
+                width: 33.333%;
+                background-color: #112934;
+                border-radius: 8px 8px 8px 8px;
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #EEEEEE;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                margin-bottom: 0px;
+                padding: 30px;
+
+                .iCbImg {
+                    margin-bottom: 20px;
+
+                    img {
+                        height: auto;
+                        width: 100%;
+                        border: none;
+                        vertical-align: middle;
+                        display: inline-block;
+                        border-radius: 8px 8px 8px 8px;
+                    }
+                }
+
+                h6 {
+                    font-weight: bold;
+                    line-height: 1.3em;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 1.3em;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                    text-align: center;
+
+                    a {
+                        color: #00F0FF;
+                    }
+                }
+
+                li {
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 0.9em;
+                    color: #ffffff;
+                    text-align: center;
+
+                    i {
+                        color: #AAAAAA;
+                    }
+                }
+
+                .starsIcon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    text-align: center;
+                    margin-top: 20px;
+
+                    i {
+                        color: #f0ad4e;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+                max-width: 500px;
+
+                .inCourseUh7Box {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .MuijLM {
+            max-width: 450px;
+            margin: auto;
+            margin-top: 30px;
+
+            .siteBtn {
+                background-color: #00F0FF;
+                color: #02131B;
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    text-align: right;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+}

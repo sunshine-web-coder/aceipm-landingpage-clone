@@ -1,0 +1,22 @@
+.BlogA {
+    padding: 100px 0px 100px 0px;
+
+    .inBlogA {
+
+        .BlogACont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+
+            @media screen and (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media screen and (max-width: 767px) {
+                grid-template-columns: repeat(1, 1fr);
+                max-width: 500px;
+                margin: auto;
+            }
+        }
+    }
+}

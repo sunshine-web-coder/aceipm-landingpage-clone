@@ -1,0 +1,274 @@
+.CourseA {
+    padding: 60px 0px 60px 0px;
+
+    .inCourseA {
+        padding: 0;
+
+        .title {
+            padding: 10px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+
+            h2 {
+                text-transform: none;
+                line-height: 1.3em;
+                color: #112934;
+                font-family: "Poppins", Sans-serif;
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 2.6em;
+                }
+            }
+
+            p {
+                margin-bottom: 20px;
+                text-align: center;
+                color: #000000;
+                font-family: "Montserrat", Sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 1em;
+                }
+
+                strong {
+                    color: #112934;
+                }
+            }
+        }
+
+        .c7ik0r {
+            display: flex;
+            position: relative;
+            gap: 20px;
+            padding: 10px;
+
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+            }
+
+            .c7ik0rL {
+                width: 100%;
+                position: relative;
+
+                .inC7ik0rL {
+                    padding: 10px;
+                    display: flex;
+                    gap: 20px;
+                    position: sticky;
+                    top: 100px;
+
+                    @media screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+
+                    .c7ik0rLBox {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .box {
+                            width: 100%;
+                            padding: 20px;
+                            margin: 0px 0px 0px 0px;
+                            padding: 20px 20px 20px 20px;
+                            background-color: #112934;
+                            border-radius: 8px 8px 8px 8px;
+                            transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, -webkit-box-shadow .3s;
+                            text-align: center;
+
+                            .fa-solid {
+                                font-size: 50px;
+                                color: #2DCECE;
+                                border-color: #2DCECE;
+                                font-weight: 900;
+                            }
+
+                            h4 {
+                                font-family: "Poppins", Sans-serif;
+                                font-size: 24px;
+                                font-weight: bold;
+                                text-transform: capitalize;
+                                color: #ffffff;
+                                margin-bottom: 10px;
+                                margin-top: 10px;
+                            }
+
+                            p {
+                                color: #FFFFFF;
+                                font-family: "Poppins", Sans-serif;
+                                font-size: 16px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .c7ik0rR {
+                width: 100%;
+                padding: 10px;
+
+                .inC7ik0rR {
+                    position: relative;
+
+                    .Muny6Box {
+                        margin-bottom: 20px;
+                        display: flex;
+
+                        .timeline-icon {
+
+                            .icon,
+                            .icon2,
+                            .icon3,
+                            .icon4,
+                            .icon5,
+                            .icon6 {
+                                min-height: 3em;
+                                min-width: 3em;
+                                line-height: 3em;
+                                background-color: #ECEDFB;
+                                border-radius: 999px;
+                                text-align: center;
+                                color: #303030;
+                                flex-grow: 0;
+                                position: relative;
+                                z-index: 1;
+
+                                &.activeIcon,
+                                &.activeIcon2,
+                                &.activeIcon3,
+                                &.activeIcon4,
+                                &.activeIcon5,
+                                &.activeIcon6 {
+                                    background-color: #112934;
+                                    color: #ffffff;
+                                }
+                            }
+
+                        }
+
+                        .Muny6Box_cont,
+                        .Muny6Box_cont2,
+                        .Muny6Box_cont3,
+                        .Muny6Box_cont4,
+                        .Muny6Box_cont5,
+                        .Muny6Box_cont6 {
+                            max-width: 100%;
+                            padding: 40px;
+                            border-radius: 4px 4px 4px 4px;
+                            background-color: #ECEDFB;
+                            flex-grow: 1;
+                            flex-basis: 50%;
+                            max-width: 100%;
+                            position: relative;
+                            margin-left: 14px;
+                            transition: background .2s ease-in-out;
+
+                            &::before {
+                                content: " ";
+                                position: absolute;
+                                left: -15px;
+                                top: 4%;
+                                border-top: 15px solid transparent;
+                                border-right: 15px solid #ECEDFB;
+                                border-left: none;
+                                border-bottom: 15px solid transparent;
+                                transition: background .2s ease-in-out;
+                            }
+
+                            p {
+                                font-weight: 700;
+
+                                &:last-child {
+                                    font-weight: inherit;
+                                }
+                            }
+
+                            h4 {
+                                color: #252525;
+                                font-family: "Poppins", Sans-serif;
+                                font-size: 1.7em;
+                                font-weight: bold;
+                                text-transform: capitalize;
+                                margin-bottom: 15px;
+                                line-height: 35px;
+
+                                @media screen and (max-width: 767px) {
+                                    font-size: 1.5em;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #02131B;
+
+                                &::before {
+                                    border-right: 15px solid #02131B;
+                                }
+
+                                p {
+                                    color: #FFB800;
+
+                                    &:last-child {
+                                        color: #ffffff;
+                                    }
+                                }
+
+                                h4 {
+                                    color: #00F0FF;
+                                }
+                            }
+
+                            &.changeDivStyle,
+                            &.changeDivStyle2,
+                            &.changeDivStyle3,
+                            &.changeDivStyle4,
+                            &.changeDivStyle5,
+                            &.changeDivStyle6 {
+                                background-color: #112934;
+
+                                &::before {
+                                    border-right: 15px solid #112934;
+                                }
+
+                                p {
+                                    color: #FFB800;
+
+                                    &:last-child {
+                                        color: #ffffff;
+                                    }
+                                }
+
+                                h4 {
+                                    color: #00F0FF;
+                                }
+                            }
+                        }
+                    }
+
+                    .timeline__line {
+                        left: calc(3em / 2);
+                        background-color: #EBF4F4;
+                        top: 0px;
+                        right: auto;
+                        bottom: 268.438px;
+                        width: 3px;
+                        position: absolute;
+                        transform: translateX(-50%);
+
+                        .timeline__line__inner {
+                            background-color: #00DBE9;
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
