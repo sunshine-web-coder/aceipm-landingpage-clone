@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { TrustedTestimonyData } from "../../../component/allDatas";
 import "./style.scss";
